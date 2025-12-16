@@ -1,0 +1,100 @@
+/* 1. Загальні налаштування */
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* Тип SANS-SERIF для чіткості */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    /* Міжрядковий інтервал для зручності читання */
+}
+
+/* 2. Шапка (Header) */
+header {
+    background-color: #ff9800;
+    /* Твій фірмовий помаранчевий */
+    padding: 60px 20px;
+    text-align: center;
+    /* Центруємо логотип і назву */
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    /* Ставимо лого і назву в стовпчик */
+    align-items: center;
+    gap: 20px;
+}
+
+/* 3. Стиль Логотипа */
+.main-logo {
+    width: 140px;
+    /* Оптимальний розмір */
+    height: auto;
+    border-radius: 50%;
+    /* Робимо круглим */
+    border: 5px solid white;
+    /* Біла рамка, як на взірці */
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Легка тінь для об'єму */
+}
+
+/* 4. Назва "Рудий пес" */
+.site-title {
+    font-size: 52px;
+    font-weight: 700;
+    /* Максимальна жирність заголовка */
+    text-transform: uppercase;
+    /* Великі літери для стилю */
+    letter-spacing: 3px;
+    /* Міжсимвольний інтервал */
+    margin: 10px 0;
+    color: #333;
+    /* Темний колір, щоб назва виділялася на помаранчевому */
+}
+
+/* 5. Навігація (Посилання) */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    /* Прибираємо підкреслення */
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 1px dashed white;
+    /* Красива тонка лінія знизу */
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #333;
+    border-bottom-color: #333;
+}
+
+/* 6. Футер (Низ сторінки) */
+footer {
+    background-color: #2c2c2c;
+    /* Темний фон для контрасту */
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.footer-section h3 {
+    color: #ff9800;
+    /* Помаранчеві заголовки у футері */
+    margin-bottom: 15px;
+}
+
+.sponsor-btn {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
